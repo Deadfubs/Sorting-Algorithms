@@ -11,7 +11,7 @@ comp = 0
 
 
 # ----------------------------------------------------------------------------------------------------------------------
-# 'heapfy' converte uma árvore binária em uma estrutura do tipo heap
+# 'heapfy' converte um vetor em uma estrutura do tipo heap
 # n é o tamanho do heap
 def heapfy(vetor, heap_tam, i):
     global comp
