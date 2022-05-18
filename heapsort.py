@@ -1,5 +1,6 @@
 """
 Algoritmo de ordenação Heap Sort
+Autor: Fúlvio Taroni Monteforte
 """
 
 import random
