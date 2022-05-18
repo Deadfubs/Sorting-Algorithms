@@ -20,22 +20,21 @@ def heapfy(vetor, heap_tam, i):
     r = 2 * i + 2  # direita
 
     # Verifica se existe um descendente a esquerda da raiz e se é maior do que a raiz
-    comp += 1
     if l < heap_tam and vetor[i] < vetor[l]:
+        comp += 1
         maior = l
 
 
     # Verifica se existe um descendente a direita da raiz e se é maior do que a raiz
-    comp += 1
     if r < heap_tam and vetor[maior] < vetor[r]:
+        comp += 1
         maior = r
 
 
     # Troca a raiz se for necessário
-    comp += 1
     if maior != i:
+        comp += 1
         vetor[i], vetor[maior] = vetor[maior], vetor[i]  # Executa a troca
-
         # Converte a raiz
         heapfy(vetor, heap_tam, maior)
 # ----------------------------------------------------------------------------------------------------------------------
